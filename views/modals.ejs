@@ -1,0 +1,56 @@
+<div id="modalEssai" class="modal modal-fixed-footer">
+    <form action="/demo" method="post">
+        <div class="modal-content" style="height:calc(100% - 20px)">
+            <div class="card-panel">
+                <h5>Faites votre demande dès maintenant !</h5>
+                <h6 class="blue-text text-darken-2">Essai gratuit et sans engagement de EConcept Web.</h6>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s5">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input name="nom" id="nom" type="text" class="validate" required="" aria-required="true">
+                            <label for="nom">Nom</label>
+                        </div>
+                        <div class="input-field col s5">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input class="prenom" id="prenom" type="text" class="validate" required="" aria-required="true">
+                            <label for="prenom">Prénom</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s5">
+                            <i class="material-icons prefix">business</i>
+                            <input name="societe"  type="text" class="validate" required="" aria-required="true">
+                            <label for="societe">Société/Municipalité</label>
+                        </div>
+                        <div class="input-field col s5">
+                            <i class="material-icons prefix">phone</i>
+                            <input name="telephone" id="telephone" type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" class="validate" required="" aria-required="true">
+                            <label for="telephone" data-error="Numéro non valide">Téléphone</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s11">
+                            <i class="material-icons prefix">email</i>
+                            <input name="email" id="email" type="email" class="validate" required="" aria-required="true">
+                            <label for="email" data-error="Email non valide">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Votre message</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+</div>
