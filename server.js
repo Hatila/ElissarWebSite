@@ -17,6 +17,10 @@ app.get('/', function(req, res) {
     res.render('index.ejs', {moment : moment});
 });
 
+app.get('/assistance', function(req, res) {
+    res.render('assistance.ejs', {moment : moment});
+});
+
 app.post('/demo',urlencodedParser, function (req, res) {
     var nom = req.body.nom;
     var prenom = req.body.prenom;
@@ -40,5 +44,15 @@ app.post('/demo',urlencodedParser, function (req, res) {
     });
     res.render('index.ejs', {moment : moment});
 })
+
+app.get('/downloadTeamViewer', function(req, res) {
+    var file = __dirname + '/assets/fichiers/Assistance_Elissar_Participant_TeamViewer.exe';
+    res.download(file);
+});
+
+app.get('/downloadFastviewer', function(req, res) {
+    var file = __dirname + '/assets/fichiers/Assistance_Elissar.exe';
+    res.download(file);
+});
 
 app.listen(8080);
