@@ -17,10 +17,6 @@ app.get('/', function(req, res) {
     res.render('index.ejs', {moment : moment});
 });
 
-app.get('/assistance', function(req, res) {
-    res.render('assistance.ejs', {moment : moment});
-});
-
 app.post('/demo',urlencodedParser, function (req, res) {
     var nom = req.body.nom;
     var prenom = req.body.prenom;
