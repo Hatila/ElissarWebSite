@@ -1,19 +1,16 @@
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo"><img src="/img/logo.svg" class=""/></a>
+        <a id="logo-container" href="/" class="brand-logo"><img src="/img/Logo-ELISSAR-pour-site.png" style="height:60px;"/></a>
         <ul class="right hide-on-med-and-down">
+            <li><a href="/galerie"><i class="material-icons left">insert_drive_file</i>Documentation</a></li>
             <li><a href="#" onclick="$('#modalAssistance').openModal();"><i class="material-icons left">phone</i>Assistance</a></li>
-            <li><a href="#" class="dropdown-button" href='#' data-activates='dropdown1'><i class="material-icons left">email</i>Nous contacter</a></li>
-                <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#">Contact Arthur EZZEDINE</a></li>
-                    <li><a href="#" id="tel-contact">04 78 22 40 99</a></li>
-                </ul>
+            <li><a href="#" onclick="$('#modalContact').openModal();"><i class="material-icons left">email</i>Nous contacter</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="#" onclick="$('#modalAssistance').openModal();">Assistance</a></li>
-            <li><a href="#">Nous contacter</a></li>
+            <li><a href="/"><i class="material-icons left">home</i>Accueil</a></li>
+            <li><a href="#" onclick="$('#modalAssistance').openModal();"><i class="material-icons left">phone</i>Assistance</a></li>
+            <li><a href="#" onclick="$('#modalContact').openModal();"><i class="material-icons left">email</i>Nous contacter</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
